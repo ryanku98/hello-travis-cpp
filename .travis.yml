@@ -1,0 +1,12 @@
+language: cpp
+
+compilers:
+  - g++
+  - clang++
+
+script:
+  - g++ -o hello_travis hello_travis.cpp
+  - ./hello_travis
+
+notifications:
+  email: false
